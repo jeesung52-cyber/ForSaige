@@ -1,0 +1,70 @@
+// Microsoft Visual C++ generated resource script.
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+#include "afxres.h"
+#undef APSTUDIO_READONLY_SYMBOLS
+
+LANGUAGE LANG_KOREAN, SUBLANG_KOREAN
+#pragma code_page(949)
+
+#ifdef APSTUDIO_INVOKED
+1 TEXTINCLUDE
+BEGIN
+    "resource.h\0"
+END
+2 TEXTINCLUDE
+BEGIN
+    "#include ""afxres.h""\r\n\0"
+END
+3 TEXTINCLUDE
+BEGIN
+    "\r\n\0"
+END
+#endif
+
+IDR_MAINFRAME           ICON                    "res\\SaigeInspection.ico"
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 900, 600
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_THICKFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_CLIPCHILDREN
+EXSTYLE WS_EX_ACCEPTFILES
+FONT 9, "Malgun Gothic", 400, 0, 0x0
+BEGIN
+    LISTBOX         IDC_IMAGE_LIST,
+                    631, 0, 269, 520, LBS_NOTIFY | LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | WS_VSCROLL
+    PUSHBUTTON      "Load", IDC_BTN_LOAD,
+                    10, 70, 80, 25
+    PUSHBUTTON      "", IDC_BTN_MINIMIZE,
+                    0, 0, 0, 0
+    PUSHBUTTON      "", IDC_BTN_MAXIMIZE,
+                    0, 0, 0, 0
+    PUSHBUTTON      "", IDC_BTN_CLOSE,
+                    0, 0, 0, 0
+END
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 260, 100
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 9, "Malgun Gothic", 400, 0, 0x0
+BEGIN
+    ICON            IDR_MAINFRAME, -1, 10, 10, 21, 20
+    LTEXT           "Labeling Assistant v1.0", -1, 40, 15, 200, 10
+    LTEXT           "Saige Segmentation Inspection Tool", -1, 40, 30, 200, 10
+    DEFPUSHBUTTON   "OK", IDOK, 105, 80, 50, 14
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "LabelingAssistant"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE        "Labeling Assistant"
+    AFX_IDS_IDLEMESSAGE      "Ready"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT             "&About...\nAbout"
+END
